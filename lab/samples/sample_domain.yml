@@ -1,0 +1,25 @@
+intents:
+  - greet 
+  - goodbye
+  - affirm
+  - deny
+  - thanks
+
+slots:
+  sample_slot:
+    type: text
+
+entities:
+  - sample_entity
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  
+templates:
+  utter_greet:
+    - text: "Hello!"
+    - text: "Hey!!"
+  utter_goodbye:
+    - text: "Bye!"
+  

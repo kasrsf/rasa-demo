@@ -1,0 +1,47 @@
+intents:
+  - greet 
+  - goodbye
+  - affirm
+  - deny
+  - thanks
+  - results_query
+  - presence_check
+  - inform
+
+slots:
+  team:
+    type: text
+  season:
+    type: text
+
+entities:
+  - team
+  - season
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_sure
+  - utter_ok
+  - utter_np
+  - utter_what_season
+  - utter_what_team
+  - action_get_results
+  - action_check_presence
+
+templates:
+  utter_greet:
+    - text: "Hello!"
+    - text: "Hey!!"
+  utter_goodbye:
+    - text: "Bye!"
+  utter_sure:
+    - text: "Are you sure?"
+  utter_ok:
+    - text: "OK"
+  utter_np:
+    - text: "No Problem"
+  utter_what_season:
+    - text: "What season?"
+  utter_what_team:
+    - text: "What team?"
